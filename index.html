@@ -1,1 +1,181 @@
-# mahadev-tyre
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahadev Tyre Retreading</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+header {
+  background: black;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Nav */
+nav {
+  display: flex;
+  justify-content: center;
+  background: red;
+  flex-wrap: wrap;
+}
+nav a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+nav a:hover {
+  background: black;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+  url('https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2');
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+/* Sections */
+.section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Services */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 20px;
+}
+.card {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+  gap: 10px;
+}
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Buttons */
+.btn {
+  background: red;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* Contact */
+.contact {
+  background: black;
+  color: white;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🚛 Mahadev Tyre Retreading</h1>
+  <p>Trusted Tyre Service in Sojat City</p>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#services">Services</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+  <h1>Best Tyre Retreading Service</h1>
+  <p>Strong Grip • Long Life • Best Quality</p>
+  <button class="btn" onclick="callNow()">📞 Call Now</button>
+  <button class="btn" onclick="whatsapp()">💬 WhatsApp</button>
+</section>
+
+<section class="section" id="services">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">Tyre Retreading</div>
+    <div class="card">Puncture Repair</div>
+    <div class="card">Truck Tyre Service</div>
+    <div class="card">Wheel Checking</div>
+  </div>
+</section>
+
+<section class="section" id="gallery">
+  <h2>Our Work</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1515923164088-65c9f6e7e6b1">
+    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70">
+    <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf">
+  </div>
+</section>
+
+<section class="section">
+  <h2>Why Choose Us?</h2>
+  <p>✔ Experienced Staff</p>
+  <p>✔ High Quality Work</p>
+  <p>✔ Affordable Price</p>
+</section>
+
+<section class="section contact" id="contact">
+  <h2>Contact Us</h2>
+  <p>📍 NH 162 Beawar Pindwada Road, Sojat City</p>
+  <p>📞 7340401551</p>
+
+  <!-- Google Map -->
+  <iframe 
+    src="https://maps.google.com/maps?q=Sojat%20City&t=&z=13&ie=UTF8&iwloc=&output=embed"
+    width="100%" height="200" style="border:0;"></iframe>
+</section>
+
+<footer>
+  <p>© 2026 Mahadev Tyre Retreading | All Rights Reserved</p>
+</footer>
+
+<script>
+function callNow(){
+  window.location.href = "tel:7340401551";
+}
+
+function whatsapp(){
+  window.location.href = "https://wa.me/917340401551";
+}
+</script>
+
+</body>
+</html>
